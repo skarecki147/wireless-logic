@@ -7,8 +7,8 @@ type Options = {
   url: string;
 };
 
-export const command: string = 'scrape <url>';
-export const desc: string = 'Scrape <url> and return list of subscription packages';
+export const command = 'scrape <url>';
+export const desc = 'Scrape <url> and return list of subscription packages';
 
 export const builder: CommandBuilder<Options, Options> = (yargs: any) =>
   yargs

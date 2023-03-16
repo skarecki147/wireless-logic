@@ -5,8 +5,8 @@ type Options = {
   name: string;
 };
 
-export const command: string = 'greet <name>';
-export const desc: string = 'Greet <name> with Hello';
+export const command = 'greet <name>';
+export const desc = 'Greet <name> with Hello';
 
 export const builder: CommandBuilder<Options, Options> = (yargs: any) =>
   yargs

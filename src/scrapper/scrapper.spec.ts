@@ -2,19 +2,6 @@ import { SubscriptionPackage } from '../models/subscription-package';
 import { Scrapper } from './scrapper';
 
 describe('Scrapper', () => {
-  const mockGetDataFromUrl = jest.fn(() => `
-      <div class="package">
-        <div class="header"><h3>Product 1</h3></div>
-        <div class="package-description">Description of product 1</div>
-        <div class="package-price">$19.99</div>
-      </div>
-      <div class="package">
-        <div class="header"><h3>Product 2</h3></div>
-        <div class="package-description">Description of product 2</div>
-        <div class="package-price">$29.99</div>
-      </div>`
-  )
-
   let scrapper: Scrapper;
 
   beforeAll(() => {

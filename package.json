@@ -8,6 +8,7 @@
     "start": "node build/index.js",
     "dev": "npm run build && npm run start",
     "test": "jest",
+    "lint": "eslint . --ext .ts",
     "doc": "typedoc"
   },
   "engines": {

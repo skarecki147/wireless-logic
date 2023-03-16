@@ -25,7 +25,7 @@ export class Scrapper {
    * @param pageHtmlString The HTML string to load into the CheerioAPI object.
    * @returns The CheerioAPI object representing the loaded page.
    */
-  loadPage(pageHtmlString: string = ''): CheerioAPI {
+  loadPage(pageHtmlString = ''): CheerioAPI {
     this._page$ = load(pageHtmlString)
     return this._page$
   }

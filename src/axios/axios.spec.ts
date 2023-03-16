@@ -14,7 +14,7 @@ describe('getDataFromUrl function', () => {
 
   it('should handle errors and log them to the console', async () => {
     const url = 'https://jsonplaceholder.typicode.com/non-existent-url'
-    const consoleErrorMock = jest.spyOn(console, 'error').mockImplementation(() => {})
+    const consoleErrorMock = jest.spyOn(console, 'error').mockImplementation()
     const result = await getDataFromUrl(url)
 
     expect(result).toBeNull()
