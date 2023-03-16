@@ -1,6 +1,10 @@
 {
   "entryPoints": [
-    "src/hello/*.ts"
+    "src/axios/*.ts",
+    "src/hello/*.ts",
+    "src/models/*.ts",
+    "src/scraper/*.ts",
+    "src/utils/*.ts"
   ],
   "out": "docs"
 }
